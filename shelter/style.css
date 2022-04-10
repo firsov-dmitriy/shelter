@@ -1,0 +1,43 @@
+header {
+  margin: 0;
+  height: 908px;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+  padding: 60px 40px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(/img/header-backgraund.png);
+}
+nav ul {
+  display: flex;
+}
+.link-item {
+  margin: 0 17.5px 0 17.5px;
+  padding: 0;
+  list-style-type: none;
+  color: white;
+}
+.title {
+  margin-top: 0;
+  color: #f1cdb3;
+  margin-bottom: 25px;
+}
+.subtitle {
+  margin-top: 0px;
+  color: white;
+}
+.logo {
+  width: 184px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+}
+.link-item:hover {
+  cursor: pointer;
+  border-bottom: solid 3px #f1cdb3;
+}
+nav {
+  height: max-content;
+  position: relative;
+}
