@@ -245,6 +245,30 @@ select {
           flex: 0 0 auto;
 }
 
+.__btn-background {
+  background-color: #F1CDB3;
+  max-width: 261px;
+  height: 52px;
+  border-radius: 100px;
+  margin: 0 auto;
+  position: relative;
+  top: 60px;
+  left: 0;
+}
+
+.__btn-background a {
+  text-decoration: none;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #292929;
+  position: absolute;
+  top: 15px;
+  left: 45px;
+}
+
 .main-block {
   background-image: url(/assets/images/header-backgraund.png);
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
@@ -299,11 +323,36 @@ select {
   color: #CDCDCD;
 }
 
-.main-block__btn {
-  width: 150px;
+.main-block__btn-background {
+  background-color: #F1CDB3;
+  max-width: 207px;
   height: 52px;
-  background: #F1CDB3;
   border-radius: 100px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.main-block__btn-background a {
+  text-decoration: none;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #292929;
+  position: absolute;
+  top: 15px;
+  left: 45px;
+}
+
+.main-block__btn-background:hover {
+  cursor: pointer;
+}
+
+.main-animal {
+  width: 1280px;
+  margin: 0 auto;
 }
 
 .main-animal__container {
@@ -358,5 +407,154 @@ select {
 .main-animal .main-animal__animal {
   width: 300px;
   height: 408px;
+}
+
+.main-friends {
+  height: 877px;
+  width: 1280px;
+  margin: 0 auto;
+  background: #F6F6F6;
+}
+
+.main-friends__container {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.main-friends__title {
+  margin: 0 auto;
+  width: 400px;
+  height: 90px;
+  text-align: center;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #545454;
+}
+
+.main-friends__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 40px;
+}
+
+.main-friends__control .btn-control:hover {
+  background-color: #F1CDB3;
+  cursor: pointer;
+}
+
+.main-friends__control .btn-control {
+  border: 2px solid #F1CDB3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  top: 260px;
+  left: 0;
+  z-index: 20px;
+  padding: 26px;
+  border-radius: 100px;
+}
+
+.main-friends__control .btn-control ._prev {
+  width: 52px;
+  height: 52px;
+}
+
+.main-friends__control .btn-control ._prev img {
+  width: 14px;
+  height: 6px;
+}
+
+.main-friends__pets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 103px;
+}
+
+.main-friends__pet {
+  width: 270px;
+  height: 435px;
+  background: #FAFAFA;
+  border-radius: 9px;
+}
+
+.main-friends__pet .pet-image {
+  width: 270px;
+  height: 270px;
+}
+
+.main-friends__pet .pet-title {
+  text-align: center;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  padding-top: 30px;
+}
+
+.main-friends__pet .pet-link:hover {
+  background-color: #F1CDB3;
+  cursor: pointer;
+}
+
+.main-friends__pet .pet-link {
+  border: 3px solid #F1CDB3;
+  width: 187px;
+  height: 52px;
+  border-radius: 100px;
+  position: relative;
+  top: 30px;
+  left: 41.5px;
+}
+
+.main-friends__pet .pet-link a {
+  text-decoration: none;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #292929;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+}
+
+.__btn-background {
+  background-color: #F1CDB3;
+  max-width: 261px;
+  height: 52px;
+  border-radius: 100px;
+  margin: 0 auto;
+  position: relative;
+  top: 60px;
+  left: 0;
+}
+
+.__btn-background a {
+  text-decoration: none;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  color: #292929;
+  position: absolute;
+  top: 15px;
+  left: 45px;
 }
 /*# sourceMappingURL=style.css.map */

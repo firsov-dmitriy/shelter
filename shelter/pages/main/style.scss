@@ -266,6 +266,36 @@ select {
   flex: 0 0 auto;
 }
 
+.__btn-background {
+
+  background-color: #F1CDB3;
+  max-width: 261px;
+  height: 52px;
+  border-radius: 100px;
+  margin: 0 auto;
+
+  position: relative;
+  top: 60px;
+  left: 0;
+
+  a {
+    text-decoration: none;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    color: #292929;
+    position: absolute;
+    top: 15px;
+    left: 45px;
+
+
+  }
+
+
+}
+
 .main-block {
   background-image: url(/assets/images/header-backgraund.png);
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
@@ -326,20 +356,47 @@ select {
   }
 
   // .main-block__btn
+  &__btn-background {
 
-  &__btn {
-    width: 150px;
+    background-color: #F1CDB3;
+    max-width: 207px;
     height: 52px;
-
-    background: #F1CDB3;
     border-radius: 100px;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    a {
+      text-decoration: none;
+      font-family: 'Georgia';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 130%;
+      color: #292929;
+      position: absolute;
+      top: 15px;
+      left: 45px;
+
+
+
+    }
+
+
   }
+
+  &__btn-background:hover {
+    cursor: pointer;
+  }
+
+
 }
 
 
 .main-animal {
 
-
+  width: 1280px;
+  margin: 0 auto;
 
   &__container {
     display: flex;
@@ -388,5 +445,191 @@ select {
       height: 408px;
     }
   }
+
+}
+
+.main-friends {
+  height: 877px;
+  width: 1280px;
+  margin: 0 auto;
+  background: #F6F6F6;
+
+  &__container {
+    position: relative;
+    top: 0;
+    left: 0;
+
+  }
+
+  &__title {
+    margin: 0 auto;
+    width: 400px;
+    height: 90px;
+    text-align: center;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    color: #545454;
+  }
+
+  &__control {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 40px;
+
+    .btn-control:hover {
+      background-color: #F1CDB3;
+      cursor: pointer;
+    }
+
+    .btn-control {
+      border: 2px solid #F1CDB3;
+      box-sizing: border-box;
+      position: relative;
+      top: 260px;
+      left: 0;
+      z-index: 20px;
+      padding: 26px;
+      border-radius: 100px;
+
+
+
+
+
+
+      ._prev {
+        width: 52px;
+        height: 52px;
+
+
+
+
+        img {
+          width: 14px;
+          height: 6px;
+        }
+
+      }
+    }
+  }
+
+  &__pets {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 103px;
+
+  }
+
+  &__pet {
+    width: 270px;
+    height: 435px;
+
+
+    background: #FAFAFA;
+    border-radius: 9px;
+
+
+
+    .pet-image {
+      width: 270px;
+      height: 270px;
+    }
+
+    .pet-title {
+      text-align: center;
+      font-family: 'Georgia';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      padding-top: 30px;
+
+
+    }
+
+    .pet-link:hover {
+      background-color: #F1CDB3;
+      cursor: pointer;
+    }
+
+    .pet-link {
+      border: 3px solid #F1CDB3;
+      width: 187px;
+      height: 52px;
+      border-radius: 100px;
+
+      position: relative;
+      top: 30px;
+      left: 41.5px;
+
+
+
+
+
+
+
+
+
+      a {
+
+        text-decoration: none;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        color: #292929;
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        height: 30%;
+        width: 50%;
+        margin: -15% 0 0 -25%;
+
+
+
+
+
+
+
+
+
+
+      }
+
+
+    }
+  }
+}
+
+.__btn-background {
+
+  background-color: #F1CDB3;
+  max-width: 261px;
+  height: 52px;
+  border-radius: 100px;
+  margin: 0 auto;
+
+  position: relative;
+  top: 60px;
+  left: 0;
+
+  a {
+    text-decoration: none;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    color: #292929;
+    position: absolute;
+    top: 15px;
+    left: 45px;
+
+
+  }
+
 
 }
