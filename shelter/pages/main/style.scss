@@ -801,3 +801,127 @@ select {
     color: #B2B2B2;
   }
 }
+
+.footer {
+
+  position: relative;
+  top: 0;
+  left: 418px;
+  background-image: url(/assets/images/footer-back.png);
+  background:
+    url(noise_lines_transparent@2X.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ,
+    #211F20;
+
+  max-width: 1280px;
+  height: 350px;
+}
+
+.footer-container {
+  display: flex;
+  margin: 20px 40px 0 40px;
+  max-width: 1280px;
+  height: 350px;
+}
+
+.footer-connect {
+  margin: 56px 160px 0 0;
+  width: 302px;
+  height: 234px;
+  // .footer-connect__title
+
+  &__title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    /* or 45px */
+
+    letter-spacing: 0.06em;
+
+    /* color-light-xl */
+
+    color: #FFFFFF;
+
+
+    // .footer-connect__email
+  }
+
+  &__email {
+    margin: 40px 0;
+
+  }
+
+  // .footer-connect__phone
+
+  &__phone {}
+
+}
+
+.footer-images {}
+
+.footer-text {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+
+  letter-spacing: 0.06em;
+
+  /* color-primary */
+
+  color: #F1CDB3;
+  margin-left: 20px;
+}
+
+.footer-office {
+  width: 278px;
+  height: 234px;
+  margin: 56px 160px 0 0;
+
+  // .footer-office__title
+
+  &__title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    /* or 45px */
+
+    letter-spacing: 0.06em;
+
+    /* color-light-xl */
+
+    color: #FFFFFF;
+    margin-bottom: 34px;
+
+  }
+
+  // .footer-office__boston
+
+  &__boston {
+    margin-bottom: 32px;
+    width: max-content;
+
+  }
+
+  // .footer-office__london
+
+  &__london {}
+
+
+}
+
+.__flex {
+  display: flex;
+}
+
+.footer-images__dog {
+  margin-top: 16px;
+}
