@@ -256,16 +256,16 @@ select {
 }
 
 .main-block__image {
-  position: absolute;
-  top: -64px;
-  left: 500px;
-  margin-top: 245px;
+  padding: 180px 0 0 20px;
+  margin-right: 40px;
 }
 
 .main-block__container {
-  position: absolute;
-  top: 342px;
-  left: 50px;
+  padding: 183px 10px 0 50px;
+  width: 500px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,9 +273,9 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 460px;
-  height: 322px;
-  margin-left: 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   color: #FAFAFA;
 }
 
@@ -300,9 +300,8 @@ select {
 }
 
 .main-block__btn {
-  width: 207px;
+  width: 150px;
   height: 52px;
-  border-radius: 25px;
   background: #F1CDB3;
   border-radius: 100px;
 }
