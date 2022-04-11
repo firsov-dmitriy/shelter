@@ -66,9 +66,11 @@ article>*+* {
 }
 
 .wrapper {
-  min-height: 100%;
+
   display: flex;
   flex-direction: column;
+  width: 1280px;
+  margin: 0 auto;
 
 }
 
@@ -95,7 +97,7 @@ select {
 }
 
 ._container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0px auto;
 }
 
@@ -114,7 +116,8 @@ select {
 .header {
   position: absolute;
   width: 100%;
-  margin: 40px 20px;
+
+  margin-top: 20px;
   left: 0;
   top: 0;
   z-index: 50;
@@ -123,7 +126,7 @@ select {
   &__container {
 
     display: flex;
-    min-height: 60px;
+    height: 60px;
     align-items: center;
   }
 
@@ -269,7 +272,7 @@ select {
 .__btn-background {
 
   background-color: #F1CDB3;
-  max-width: 261px;
+  width: 261px;
   height: 52px;
   border-radius: 100px;
   margin: 0 auto;
@@ -301,30 +304,44 @@ select {
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
   height: 908px;
 
-  display: flex;
+  margin: 0 auto;
+
+
 
   position: relative;
 
+  &__title {
+    margin-bottom: 42px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    margin-right: 42px;
+
+  }
+
   &__image {
 
-    padding: 180px 0 0 20px;
-    margin-right: 40px;
+    // padding: 180px 0 0 20px;
+    // margin-right: 40px;
 
+    width: 698px;
+    height: 728px;
 
   }
 
   &__container {
-    padding: 183px 10px 0 50px;
 
-    // position: absolute;
-    // top: 142px;
-    // left: 250px;
 
-    width: 500px;
-    height: max-content;
+    position: absolute;
+    top: 180px;
+    left: 40px;
+
+    width: 1200;
+    height: 728px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
 
 
     color: #FAFAFA
@@ -333,14 +350,9 @@ select {
   // .main-block__text
 
   &__text {
-    margin-bottom: 42px;
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 130%;
-    padding-right: 50px;
-
+    margin-top: 200px;
+    max-width: 460px;
+    height: 322px;
   }
 
   // .main-block__subtext
@@ -405,6 +417,7 @@ select {
     padding: 80px 0 0 0;
     height: 588px;
     background: #FFFFFF;
+    margin: 0 150px;
 
   }
 
@@ -458,6 +471,7 @@ select {
     position: relative;
     top: 0;
     left: 0;
+
 
   }
 
@@ -535,6 +549,15 @@ select {
     .pet-image {
       width: 270px;
       height: 270px;
+
+      img {
+        width: 270px;
+        height: 270px;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+
+
+      }
     }
 
     .pet-title {
@@ -635,12 +658,10 @@ select {
 }
 
 .main-help {
-  max-width: 1280px;
-  height: 611px;
-  position: relative;
-  top: 0;
-  left: 0;
   width: 1280px;
+  height: 611px;
+
+
   margin: 0 auto;
 
 
@@ -649,6 +670,9 @@ select {
   &__container {
     margin: 60px 40px 40px 0;
     padding: 0 87px;
+    position: relative;
+    top: 0;
+    left: 0;
   }
 
   &__header {
@@ -713,7 +737,7 @@ select {
 
 
 .main-dination {
-  max-width: 1280px;
+  width: 1280px;
   height: 462px;
   position: relative;
   top: 0;
@@ -804,9 +828,9 @@ select {
 
 .footer {
 
-  position: relative;
-  top: 0;
-  left: 418px;
+  // position: relative;
+  // top: 0;
+  // left: 418px;
   background-image: url(/assets/images/footer-back.png);
   background:
     url(noise_lines_transparent@2X.png),
@@ -814,14 +838,15 @@ select {
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
     ,
     #211F20;
+  margin: 0 auto;
 
-  max-width: 1280px;
+  width: 1280px;
   height: 350px;
 }
 
 .footer-container {
   display: flex;
-  margin: 20px 40px 0 40px;
+  margin: 0px 40px 0 40px;
   max-width: 1280px;
   height: 350px;
 }
@@ -923,5 +948,5 @@ select {
 }
 
 .footer-images__dog {
-  margin-top: 16px;
+  margin-top: 35px;
 }
