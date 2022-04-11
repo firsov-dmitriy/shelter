@@ -414,6 +414,7 @@ select {
   position: relative;
   top: 0;
   left: 0;
+  padding-top: 80px;
 }
 
 .main-friends__title {

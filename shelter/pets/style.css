@@ -4,7 +4,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Убираем внутренние отступы */
@@ -29,6 +29,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  grid-row-end: span 2;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -38,7 +39,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   color: #545454;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -83,7 +84,7 @@ article > * + * {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* Наследуем шрифты для инпутов и кнопок */
@@ -107,7 +108,7 @@ select {
   position: sticky;
   top: 0;
   right: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .header .__container {
@@ -116,12 +117,12 @@ select {
   display: flex;
   height: 60px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__title {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -131,8 +132,8 @@ select {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   letter-spacing: 0.06em;
   /* color-dark-l */
   color: #545454;
@@ -140,7 +141,7 @@ select {
 
 .header__subtitle {
   /* logo_subtitle */
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -150,8 +151,8 @@ select {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   letter-spacing: 0.1em;
   /* color-dark-3xl */
   color: #292929;
@@ -171,7 +172,7 @@ select {
 }
 
 .menu__item {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -184,7 +185,7 @@ select {
 }
 
 .menu__link {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -194,14 +195,14 @@ select {
 }
 
 .menu__link:hover {
-  border-bottom: 3px solid #F1CDB3;
+  border-bottom: 3px solid #f1cdb3;
 }
 
 .main-friends {
   height: 877px;
   width: 1280px;
   margin: 0 auto;
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
 .main-friends__title {
@@ -209,7 +210,7 @@ select {
   width: 400px;
   height: 90px;
   text-align: center;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -222,23 +223,23 @@ select {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   margin-top: 60px;
 }
 
 .main-friends__pet:hover .pet-link {
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
 }
 
 .main-friends__pet {
   margin: 0 0 30px 0;
   width: 270px;
   height: 435px;
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 9px;
 }
 
@@ -257,7 +258,7 @@ select {
 
 .main-friends__pet .pet-title {
   text-align: center;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -266,12 +267,12 @@ select {
 }
 
 .main-friends__pet .pet-link:hover {
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   cursor: pointer;
 }
 
 .main-friends__pet .pet-link {
-  border: 3px solid #F1CDB3;
+  border: 3px solid #f1cdb3;
   width: 187px;
   height: 52px;
   border-radius: 100px;
@@ -282,7 +283,7 @@ select {
 
 .main-friends__pet .pet-link a {
   text-decoration: none;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -298,12 +299,12 @@ select {
 
 .main-block__container {
   padding-top: 50px;
-  background: #F6F6F6;
+  background: #f6f6f6;
   height: 1343px;
 }
 
 .main-block__title {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -333,7 +334,7 @@ select {
 }
 
 .main-block__control .__counter {
-  background: #F1CDB3;
+  background: #f1cdb3;
 }
 
 .main-block__control .btn {
@@ -342,7 +343,7 @@ select {
   max-width: -moz-max-content;
   max-width: max-content;
   padding: 30px;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
   z-index: 20px;
   border-radius: 50%;
   position: relative;
@@ -363,13 +364,15 @@ select {
 }
 
 .main-block__control .btn-control:hover {
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   cursor: pointer;
 }
 
 .footer {
   background-image: url(/assets/images/footer-back.png);
-  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  background: url(noise_lines_transparent@2X.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
   margin: 0 auto;
   width: 1280px;
   height: 350px;
@@ -391,7 +394,7 @@ select {
 }
 
 .footer-connect__title {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -399,7 +402,7 @@ select {
   /* or 45px */
   letter-spacing: 0.06em;
   /* color-light-xl */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-connect__email {
@@ -407,7 +410,7 @@ select {
 }
 
 .footer-text {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -415,7 +418,7 @@ select {
   /* identical to box height, or 23px */
   letter-spacing: 0.06em;
   /* color-primary */
-  color: #F1CDB3;
+  color: #f1cdb3;
   margin-left: 20px;
 }
 
@@ -426,7 +429,7 @@ select {
 }
 
 .footer-office__title {
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -434,7 +437,7 @@ select {
   /* or 45px */
   letter-spacing: 0.06em;
   /* color-light-xl */
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 34px;
 }
 
