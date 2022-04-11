@@ -13,13 +13,16 @@
       <header class="header">
         <div class="header__container _container">
           <div class="header__logo">
-            <h1 class="header__title">Cozy House</h1>
-            <p class="header__subtitle">Shelter for pets in Boston</p>
+            <a href="#" class="header__title">
+              <h1 class="header__title" >Cozy House</h1>
+            </a>
+            
+            <p class="header__subtitle ">Shelter for pets in Boston</p>
           </div>
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__item">
-                <a href="#about" class="menu__link">About the shelter</a>
+              <li class="menu__item ">
+                <a href="#" class="menu__link active">About the shelter</a>
               </li>
               <li class="menu__item">
                 <a href="/pets/index.html" class="menu__link">Our pets</a>
@@ -45,7 +48,7 @@
               anybody else in the world, you will see!
             </p>
             <div class="main-block__btn-background">
-              <a href="#">Make a friend</a>
+              <a href="#friends">Make a friend</a>
             </div>
             </div>
            
@@ -61,7 +64,7 @@
           <div class="main-animal__container">
             <div class="main-animal__text">
               <p id="about"></p>
-              <h1 class="main-animal__title">About the shelter “Cozy House”</h1>
+              <h1 class="main-animal__title">About the shelter <br/> “Cozy House”</h1>
               <p class="main-animal__subtitle">
                 Currently we have 121 dogs and 342 cats on our hands and
                 statistics show that only 20% of them will find a family. The
@@ -83,7 +86,7 @@
           </div>
         </div>
         <div class="main-friends">
-          
+          <p id="friends"></p>
           <div class="main-friends__container">
             <h1 class="main-friends__title">
               Our friends who are looking for a house
@@ -97,8 +100,9 @@
                 <img src="/assets/icons/right-arrow.png" alt="next" />
               </div>
             </div>
-
+           
             <div class="main-friends__pets">
+            
               <div class="main-friends__pet">
                 <div class="pet-container">
                   <div class="pet-image">
@@ -138,7 +142,7 @@
             </div>
           </div>
           <div class="main-friends__rest __btn-background">
-            <a href="#">Get to know the rest</a>
+            <a href="/pets/index.html">Get to know the rest</a>
           </div>
         </div>
         <div class="main-help">
@@ -195,6 +199,7 @@
         <div class="main-dination">
           <div class="main-dination__container">
             <div class="main-donation__images">
+              
               <img src="/assets/images/donation.png" alt="donation" />
             </div>
             <div class="main-donation__card">
@@ -205,8 +210,10 @@
               <p class="main-donation__bank">
                 Name of the bank / Type of bank account
               </p>
-
-              <img class="bank-card" src="/assets//icons/card.svg" alt="card" />
+                <a href="#/">
+                  <img class="bank-card" src="/assets//icons/card.svg" alt="card" />
+                </a>
+              
               <p class="main-donatio__info">
                 Legal information and lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Maecenas a ipsum at libero sagittis dignissim
@@ -228,7 +235,11 @@
                 src="/assets/icons/email.svg"
                 alt="email"
               />
-              <h4 class="footer-text">email@shelter.com</h4>
+              <a class="footer-text" href="mailto:email@shelter.com">
+              <!-- <h4 class="footer-text"> -->
+                 email@shelter.com
+              <!-- </h4> -->
+              </a>
             </div>
             <div class="footer-connect__phone __flex">
               <img
@@ -236,7 +247,7 @@
                 src="/assets/icons/phone.svg"
                 alt="phone"
               />
-              <h4 class="footer-text">+13 674 567 75 54</h4>
+              <a href="tel:+136745677554" class="footer-text">+13 674 567 75 54</a>
             </div>
           </div>
           <div class="footer-office">
@@ -247,10 +258,10 @@
                 src="/assets/icons/office.svg"
                 alt="office"
               />
-              <h4 class="footer-text">
+              <a  target="_blank" class="footer-text" href="https://www.google.com/maps/search/gmail+ma/@49.8274329,30.1401669,6z">
                 1 Central Street, Boston <br />
                 (entrance from the store)
-              </h4>
+              </a>
             </div>
             <div class="footer-office__london __flex">
               <img
@@ -258,7 +269,7 @@
                 src="/assets/icons/office.svg"
                 alt="office"
               />
-              <h4 class="footer-text">18 South Park, London</h4>
+              <a target="_blank" href="https://www.google.com/maps/search/gmail+ma/@49.8274329,30.1401669,6z" class="footer-text">18 South Park, London</a>
             </div>
           </div>
           <div class="footer-images__dog">

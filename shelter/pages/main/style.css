@@ -144,12 +144,17 @@ select {
   font-weight: 400;
   font-size: 32px;
   line-height: 110%;
-  margin-bottom: 10px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  /* or 35px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   letter-spacing: 0.06em;
+  /* color-primary */
   color: #F1CDB3;
+  text-decoration: none;
 }
 
 .header__subtitle {
@@ -186,6 +191,11 @@ select {
   margin-left: 35px;
 }
 
+.menu .active {
+  border-bottom: 3px solid #F1CDB3;
+  color: #FAFAFA;
+}
+
 .menu__link {
   text-decoration: none;
   font-family: 'Arial';
@@ -193,11 +203,14 @@ select {
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
-  color: #FAFAFA;
+  /* identical to box height, or 24px */
+  /* color-dark-s */
+  color: #CDCDCD;
 }
 
 .menu__link:hover {
   border-bottom: 3px solid #F1CDB3;
+  color: #FAFAFA;
 }
 
 @media (max-width: 768px) {
@@ -244,30 +257,6 @@ select {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-}
-
-.__btn-background {
-  background-color: #F1CDB3;
-  width: 261px;
-  height: 52px;
-  border-radius: 100px;
-  margin: 0 auto;
-  position: relative;
-  top: 60px;
-  left: 0;
-}
-
-.__btn-background a {
-  text-decoration: none;
-  font-family: 'Georgia';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 130%;
-  color: #292929;
-  position: absolute;
-  top: 15px;
-  left: 45px;
 }
 
 .main-block {
@@ -323,8 +312,12 @@ select {
   color: #CDCDCD;
 }
 
-.main-block__btn-background {
+.main-block__btn-background:hover {
   background-color: #F1CDB3;
+}
+
+.main-block__btn-background {
+  background-color: #FFFFFF;
   max-width: 207px;
   height: 52px;
   border-radius: 100px;
@@ -482,6 +475,10 @@ select {
   margin: 0 103px;
 }
 
+.main-friends__pet:hover .pet-link {
+  background-color: #F1CDB3;
+}
+
 .main-friends__pet {
   width: 270px;
   height: 435px;
@@ -542,8 +539,12 @@ select {
   margin: -15% 0 0 -25%;
 }
 
-.__btn-background {
+.__btn-background:hover {
   background-color: #F1CDB3;
+}
+
+.__btn-background {
+  background-color: #FFFFFF;
   max-width: 261px;
   height: 52px;
   border-radius: 100px;
@@ -741,6 +742,7 @@ select {
 }
 
 .footer-text {
+  text-decoration: none;
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;

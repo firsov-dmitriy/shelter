@@ -112,6 +112,7 @@ select {
 }
 
 
+
 // ________________________HEADER__________________________________
 .header {
   position: absolute;
@@ -143,10 +144,16 @@ select {
     font-weight: 400;
     font-size: 32px;
     line-height: 110%;
-    margin-bottom: 10px;
-    width: max-content;
+    /* or 35px */
+
+    display: flex;
+    align-items: center;
     letter-spacing: 0.06em;
+
+    /* color-primary */
+
     color: #F1CDB3;
+    text-decoration: none;
 
   }
 
@@ -194,6 +201,13 @@ select {
   }
 
   // .menu__link
+  .active {
+    border-bottom: 3px solid #F1CDB3;
+
+
+    color: #FAFAFA;
+
+  }
 
   &__link {
     text-decoration: none;
@@ -202,14 +216,22 @@ select {
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    color: #FAFAFA
+    /* identical to box height, or 24px */
+
+
+    /* color-dark-s */
+
+    color: #CDCDCD;
+
   }
 
   &__link:hover {
     border-bottom: 3px solid #F1CDB3;
+    color: #FAFAFA;
 
   }
 }
+
 
 @media(max-width: 768px) {
   .header {
@@ -269,35 +291,7 @@ select {
   flex: 0 0 auto;
 }
 
-.__btn-background {
-
-  background-color: #F1CDB3;
-  width: 261px;
-  height: 52px;
-  border-radius: 100px;
-  margin: 0 auto;
-
-  position: relative;
-  top: 60px;
-  left: 0;
-
-  a {
-    text-decoration: none;
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 130%;
-    color: #292929;
-    position: absolute;
-    top: 15px;
-    left: 45px;
-
-
-  }
-
-
-}
+// 
 
 .main-block {
   background-image: url(/assets/images/header-backgraund.png);
@@ -368,9 +362,14 @@ select {
   }
 
   // .main-block__btn
+  &__btn-background:hover {
+    background-color: #F1CDB3;
+
+  }
+
   &__btn-background {
 
-    background-color: #F1CDB3;
+    background-color: #FFFFFF;
     max-width: 207px;
     height: 52px;
     border-radius: 100px;
@@ -536,6 +535,17 @@ select {
 
   }
 
+  &__pet:hover {
+    .pet-link {
+      background-color: #F1CDB3;
+
+    }
+
+
+
+
+  }
+
   &__pet {
     width: 270px;
     height: 435px;
@@ -627,9 +637,13 @@ select {
   }
 }
 
+.__btn-background:hover {
+  background-color: #F1CDB3;
+}
+
 .__btn-background {
 
-  background-color: #F1CDB3;
+  background-color: #FFFFFF;
   max-width: 261px;
   height: 52px;
   border-radius: 100px;
@@ -889,6 +903,7 @@ select {
 .footer-images {}
 
 .footer-text {
+  text-decoration: none;
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;

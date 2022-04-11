@@ -103,9 +103,11 @@ select {
   height: 120px;
   padding: 30px 40px;
   z-index: 50;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   right: 0;
+  background-color: #FFFFFF;
 }
 
 .header .__container {
@@ -226,6 +228,10 @@ select {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   margin-top: 60px;
+}
+
+.main-friends__pet:hover .pet-link {
+  background-color: #F1CDB3;
 }
 
 .main-friends__pet {

@@ -107,9 +107,10 @@ select {
     padding: 30px 40px;
 
     z-index: 50;
-    position: relative;
+    position: sticky;
     top: 0;
     right: 0;
+    background-color: #FFFFFF;
 
 
     // .header__container
@@ -247,6 +248,17 @@ select {
         justify-content: space-around;
         flex-flow: row wrap;
         margin-top: 60px;
+
+
+    }
+
+    &__pet:hover {
+        .pet-link {
+            background-color: #F1CDB3;
+
+        }
+
+
 
 
     }
