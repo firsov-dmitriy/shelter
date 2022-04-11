@@ -316,12 +316,14 @@ select {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  height: 52px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 30px 50px;
 }
 
 .main-block__control .__counter {
@@ -357,5 +359,93 @@ select {
 .main-block__control .btn-control:hover {
   background-color: #F1CDB3;
   cursor: pointer;
+}
+
+.footer {
+  background-image: url(/assets/images/footer-back.png);
+  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  margin: 0 auto;
+  width: 1280px;
+  height: 350px;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 40px 0 40px;
+  max-width: 1280px;
+  height: 350px;
+}
+
+.footer-connect {
+  margin: 56px 160px 0 0;
+  width: 302px;
+  height: 234px;
+}
+
+.footer-connect__title {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 45px */
+  letter-spacing: 0.06em;
+  /* color-light-xl */
+  color: #FFFFFF;
+}
+
+.footer-connect__email {
+  margin: 40px 0;
+}
+
+.footer-text {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  letter-spacing: 0.06em;
+  /* color-primary */
+  color: #F1CDB3;
+  margin-left: 20px;
+}
+
+.footer-office {
+  width: 278px;
+  height: 234px;
+  margin: 56px 160px 0 0;
+}
+
+.footer-office__title {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 45px */
+  letter-spacing: 0.06em;
+  /* color-light-xl */
+  color: #FFFFFF;
+  margin-bottom: 34px;
+}
+
+.footer-office__boston {
+  margin-bottom: 32px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-images__dog {
+  margin-top: 35px;
 }
 /*# sourceMappingURL=style.css.map */
