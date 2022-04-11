@@ -335,3 +335,58 @@ select {
     border-radius: 100px;
   }
 }
+
+
+.main-animal {
+
+
+
+  &__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 80px 0 0 0;
+    height: 588px;
+    background: #FFFFFF;
+
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 430px;
+    height: 380px;
+  }
+
+  &__title {
+    padding-bottom: 25px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+
+
+  }
+
+  &__subtitle {
+    padding-bottom: 25px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+  }
+
+  .main-animal {
+
+    // .main-animal__animal
+
+    &__animal {
+      width: 300px;
+      height: 408px;
+    }
+  }
+
+}
