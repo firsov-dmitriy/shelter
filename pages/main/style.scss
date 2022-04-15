@@ -114,6 +114,8 @@ select {
 
 
 // ________________________HEADER__________________________________
+$colorTitle: #F1CDB3;
+
 .header {
   position: absolute;
   width: 100%;
@@ -152,7 +154,7 @@ select {
 
     /* color-primary */
 
-    color: #F1CDB3;
+    color: $colorTitle;
     text-decoration: none;
 
   }
@@ -202,7 +204,7 @@ select {
 
   // .menu__link
   .active {
-    border-bottom: 3px solid #F1CDB3;
+    border-bottom: 3px solid $colorTitle;
 
 
     color: #FAFAFA;
@@ -225,17 +227,30 @@ select {
 
   }
 
-  &__link:hover {
-    border-bottom: 3px solid #F1CDB3;
-    color: #FAFAFA;
+  // &__link:hover {
+  //   border-bottom: 3px solid $colorTitle;
+  //   color: #FAFAFA;
 
-  }
+  // }
 }
 
 
 @media(max-width: 768px) {
-  .header {
+  .wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
 
+  ._container {
+    width: 708px;
+  }
+
+  .header {
+    &__container {
+
+      display: flex;
+
+    }
 
 
     &__title {
@@ -248,10 +263,22 @@ select {
   }
 
   .menu {
-    margin: 0px 0px 0px 150px;
+    // display: flex;
+    // justify-content: end;
+    // margin: 0px 0px 0px 81px;
 
     &__item {
-      font-size: 8px;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%;
+      /* identical to box height, or 24px */
+
+
+      /* color-light-s */
+
+      color: #FAFAFA;
     }
   }
 }
@@ -363,13 +390,14 @@ select {
 
   // .main-block__btn
   &__btn-background:hover {
-    background-color: #F1CDB3;
+    background-color: #FDDCC4;
+
 
   }
 
   &__btn-background {
 
-    background-color: #FFFFFF;
+    background-color: $colorTitle;
     max-width: 207px;
     height: 52px;
     border-radius: 100px;
@@ -474,10 +502,13 @@ select {
 
   }
 
+  // 400/ 877 * 100%;
   &__title {
+
+    width: 33%;
+    height: max-content;
     margin: 0 auto;
-    width: 400px;
-    height: 90px;
+    padding-top: 80px;
     text-align: center;
     font-family: 'Georgia';
     font-style: normal;
@@ -490,26 +521,35 @@ select {
   &__control {
     display: flex;
     justify-content: space-between;
-    margin: 0px 40px;
+    margin: 0 40px;
 
     .btn-control:hover {
-      background-color: #F1CDB3;
+      background-color: #FDDCC4;
+
       cursor: pointer;
     }
 
     .btn-control {
-      border: 2px solid #F1CDB3;
+      border: 2px solid #FDDCC4;
       box-sizing: border-box;
       position: relative;
       top: 260px;
       left: 0;
       z-index: 20px;
-      padding: 26px;
+      width: 52px;
+      height: 52px;
+
       border-radius: 100px;
 
 
 
+      img {
+        position: absolute;
+        top: 15px;
+        left: 15px;
 
+
+      }
 
 
       ._prev {
@@ -638,12 +678,14 @@ select {
 }
 
 .__btn-background:hover {
-  background-color: #F1CDB3;
+  background-color: #FDDCC4;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .__btn-background {
 
-  background-color: #FFFFFF;
+  background-color: #F1CDB3;
   max-width: 261px;
   height: 52px;
   border-radius: 100px;
@@ -915,7 +957,7 @@ select {
 
   /* color-primary */
 
-  color: #F1CDB3;
+  color: $colorTitle;
   margin-left: 20px;
 }
 

@@ -208,23 +208,34 @@ select {
   color: #CDCDCD;
 }
 
-.menu__link:hover {
-  border-bottom: 3px solid #F1CDB3;
-  color: #FAFAFA;
-}
-
 @media (max-width: 768px) {
+  .wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+  ._container {
+    width: 708px;
+  }
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .header__title {
     font-size: 1.5em;
   }
   .header__subtitle {
     font-size: 8px;
   }
-  .menu {
-    margin: 0px 0px 0px 150px;
-  }
   .menu__item {
-    font-size: 8px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    /* identical to box height, or 24px */
+    /* color-light-s */
+    color: #FAFAFA;
   }
 }
 
@@ -313,11 +324,11 @@ select {
 }
 
 .main-block__btn-background:hover {
-  background-color: #F1CDB3;
+  background-color: #FDDCC4;
 }
 
 .main-block__btn-background {
-  background-color: #FFFFFF;
+  background-color: #F1CDB3;
   max-width: 207px;
   height: 52px;
   border-radius: 100px;
@@ -417,9 +428,12 @@ select {
 }
 
 .main-friends__title {
+  width: 33%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   margin: 0 auto;
-  width: 400px;
-  height: 90px;
+  padding-top: 80px;
   text-align: center;
   font-family: 'Georgia';
   font-style: normal;
@@ -436,24 +450,31 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0px 40px;
+  margin: 0 40px;
 }
 
 .main-friends__control .btn-control:hover {
-  background-color: #F1CDB3;
+  background-color: #FDDCC4;
   cursor: pointer;
 }
 
 .main-friends__control .btn-control {
-  border: 2px solid #F1CDB3;
+  border: 2px solid #FDDCC4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
   top: 260px;
   left: 0;
   z-index: 20px;
-  padding: 26px;
+  width: 52px;
+  height: 52px;
   border-radius: 100px;
+}
+
+.main-friends__control .btn-control img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 .main-friends__control .btn-control ._prev {
@@ -540,11 +561,13 @@ select {
 }
 
 .__btn-background:hover {
-  background-color: #F1CDB3;
+  background-color: #FDDCC4;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .__btn-background {
-  background-color: #FFFFFF;
+  background-color: #F1CDB3;
   max-width: 261px;
   height: 52px;
   border-radius: 100px;
