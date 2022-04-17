@@ -31,7 +31,7 @@ dd {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  height: 100%;
+  min-height: 100%;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -46,7 +46,7 @@ ol[class] {
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
@@ -66,11 +66,14 @@ article>*+* {
 }
 
 .wrapper {
-
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 1280px;
   margin: 0 auto;
+  min-height: 100%;
+
+
 
 }
 
@@ -117,6 +120,7 @@ select {
 $colorTitle: #F1CDB3;
 
 .header {
+
   position: absolute;
   width: 100%;
 
@@ -239,9 +243,12 @@ $colorTitle: #F1CDB3;
 }
 
 .main {
-
   flex: 1 1 auto;
+
+  background-image: url(/assets/images/header-backgraund.png);
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
 }
+
 
 // ________________________FOOTER__________________________________
 .footer {
@@ -360,7 +367,7 @@ $colorTitle: #F1CDB3;
 @media(max-width: 768px) {
   .wrapper {
     width: 768px;
-
+    padding-bottom: 639px;
 
   }
 
@@ -375,6 +382,10 @@ $colorTitle: #F1CDB3;
 
   .main {
     height: 1165px;
+
+
+    flex: 1 1 auto;
+
   }
 
   .main-block__text {}
@@ -473,7 +484,9 @@ $colorTitle: #F1CDB3;
 
 // ________________________MAIN__________________________________
 
-
+.main {
+  flex: 1 1 auto;
+}
 
 .main-animal {
 
@@ -828,6 +841,11 @@ $colorTitle: #F1CDB3;
 
   &__container {
 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+
+
 
     margin: 0 auto;
     padding-top: 80px;
@@ -836,6 +854,18 @@ $colorTitle: #F1CDB3;
   }
 
 
+  .row2 {
+    display: grid;
+    grid-template-columns: repeat(4, 30%);
+    margin-top: 60px;
+    margin-left: 100px;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    grid-row-start: 2;
+
+  }
 
   &__header {
     padding-top: 80px;
@@ -906,7 +936,10 @@ $colorTitle: #F1CDB3;
 @media (max-width: 768px) {
   .main-help {
     &__container {
-      flex-wrap: wrap;
+      width: 768px;
+      // display: grid;
+      // grid-template-columns: repeat(3, 33%);
+      // grid-template-rows: repeat(3, 1fr);
     }
 
 
@@ -1046,9 +1079,8 @@ $colorTitle: #F1CDB3;
 
 .footer {
 
-  // position: relative;
-  // top: 0;
-  // left: 418px;
+
+
   background-image: url(/assets/images/footer-back.png);
   background:
     url(noise_lines_transparent@2X.png),
@@ -1170,8 +1202,14 @@ $colorTitle: #F1CDB3;
   margin-top: 35px;
 }
 
+
+
 @media (max-width: 768px) {
+
+
   .footer {
+
+
     height: 639px;
 
     &-connect {
