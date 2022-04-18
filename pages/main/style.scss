@@ -371,7 +371,7 @@ $colorTitle: #F1CDB3;
 
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1279px) {
   .wrapper {
     width: 768px;
     padding-bottom: 639px;
@@ -380,6 +380,12 @@ $colorTitle: #F1CDB3;
 
   .header {
     margin: 30px 30px;
+
+    &__subtitle {
+      margin-top: 10px;
+    }
+
+    &__logo {}
   }
 
   ._container {
@@ -402,6 +408,26 @@ $colorTitle: #F1CDB3;
 
     &__btn-background {
       margin: 0 auto;
+
+      a {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        /* identical to box height, or 22px */
+
+        letter-spacing: 0.06em;
+
+        /* color-dark-3xl */
+
+        color: #292929;
+
+
+        /* Inside auto layout */
+
+
+      }
 
     }
 
@@ -426,6 +452,7 @@ $colorTitle: #F1CDB3;
 
 
       margin-top: 100px;
+      margin-left: 130px;
 
 
       img {
@@ -452,6 +479,7 @@ $colorTitle: #F1CDB3;
 
   .menu {
     margin: 0;
+    width: 450px;
 
 
 
@@ -471,7 +499,7 @@ $colorTitle: #F1CDB3;
   }
 }
 
-@media(max-width: 320px) {
+@media(max-width:767px) {
 
   .wrapper {
     width: 320px;
@@ -479,7 +507,7 @@ $colorTitle: #F1CDB3;
 
   .header {
 
-    margin: 30px 10px 0 0px;
+    margin: 30px 0 0 10px;
 
 
     &__logo {
@@ -492,11 +520,12 @@ $colorTitle: #F1CDB3;
 
     &__container {
       width: 300px;
-      display: flex;
-      justify-content: space-around;
+      // display: flex;
+      // justify-content: space-around;
 
       .burger-menu {
         display: block;
+        margin: 0 45px 0 0;
       }
     }
   }
@@ -576,7 +605,7 @@ $colorTitle: #F1CDB3;
 
 }
 
-@media(max-width:768px) {
+@media(max-width:1279px) {
 
 
   .main-animal {
@@ -586,16 +615,35 @@ $colorTitle: #F1CDB3;
     margin: 0 auto;
 
     &__text {
-      margin-bottom: 80px;
+      margin: 0 0 100px 0;
+
+
     }
 
     &__container {
 
-
+      // margin-bottom: 100px;
       height: 1048px;
 
       flex-direction: column;
 
+    }
+
+    &__title {
+      font-family: 'Georgia';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 130%;
+      /* or 45px */
+
+
+      align-items: center;
+      letter-spacing: 0.06em;
+
+      /* color-dark-l */
+
+      color: #545454;
     }
 
     &__animal {
@@ -606,7 +654,7 @@ $colorTitle: #F1CDB3;
   }
 }
 
-@media (max-width:320px) {
+@media (max-width:767px) {
   .main {
     width: 320px;
     margin: 0 auto;
@@ -615,10 +663,15 @@ $colorTitle: #F1CDB3;
     //   max-height: 673px;
     // }
     &-block {
+
       &__image {
+        width: max-content;
+        height: max-content;
+        margin: 105px 0 0 42px;
+
         img {
           width: 260px;
-          height: fit-content;
+          height: 271px;
         }
 
       }
@@ -635,7 +688,7 @@ $colorTitle: #F1CDB3;
       }
 
       &__title {
-        padding: 0;
+
         text-align: center;
         font-family: 'Georgia';
         font-style: normal;
@@ -651,9 +704,11 @@ $colorTitle: #F1CDB3;
         /* color-light-xl */
 
         color: #FFFFFF;
+        margin: 0 0 0 15px;
       }
 
       &__subtext {
+        margin: 42px 0 42px 7px;
         text-align: center;
         font-family: 'Arial';
         font-style: normal;
@@ -671,8 +726,8 @@ $colorTitle: #F1CDB3;
 
 
     &__container {
+      padding-top: 80px;
 
-      margin: 0 auto;
 
       height: 974px;
 
@@ -680,11 +735,12 @@ $colorTitle: #F1CDB3;
 
     &__text {
       width: 300px;
-      margin: 10px;
+      margin: 0 auto;
       height: 974px;
     }
 
     &__title {
+
       font-family: 'Georgia';
       font-style: normal;
       font-weight: 400;
@@ -699,9 +755,12 @@ $colorTitle: #F1CDB3;
       /* color-dark-l */
 
       color: #545454;
+
     }
 
     &__subtitle {
+      /* paragraph-l */
+      width: 270px;
       /* paragraph-l */
 
       font-family: 'Arial';
@@ -716,6 +775,8 @@ $colorTitle: #F1CDB3;
       /* color-dark-xl */
 
       color: #4C4C4C;
+      margin: 0 auto;
+
     }
 
     &__animal {
@@ -738,6 +799,7 @@ $colorTitle: #F1CDB3;
   background: #F6F6F6;
 
   &__container {
+
     position: relative;
     top: 0;
     left: 0;
@@ -748,17 +810,28 @@ $colorTitle: #F1CDB3;
   // 400/ 877 * 100%;
   &__title {
 
-    width: 33%;
-    height: max-content;
+
     margin: 0 auto;
     padding-top: 80px;
-    text-align: center;
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 130%;
-    color: #545454;
+    width: max-content;
+
+    h3 {
+      font-family: 'Georgia';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 130%;
+      /* or 45px */
+
+
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+
+      /* color-dark-l */
+
+      color: #545454;
+    }
   }
 
   &__control {
@@ -854,13 +927,22 @@ $colorTitle: #F1CDB3;
     }
 
     .pet-title {
-      text-align: center;
+      margin: 40px 0 0 0;
       font-family: 'Georgia';
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
       line-height: 23px;
-      padding-top: 30px;
+      /* identical to box height */
+
+
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+
+      /* color-dark-l */
+
+      color: #545454;
 
 
     }
@@ -888,21 +970,28 @@ $colorTitle: #F1CDB3;
 
 
 
-      a {
 
+      a {
+        position: absolute;
+        top: 35px;
+        left: 50%;
+        margin: -15% 0 0 -25%;
         text-decoration: none;
         font-family: 'Georgia';
         font-style: normal;
         font-weight: 400;
         font-size: 17px;
         line-height: 130%;
+        /* identical to box height, or 22px */
+
+        letter-spacing: 0.06em;
+
+        /* color-dark-3xl */
+
         color: #292929;
-        position: absolute;
-        top: 35px;
-        left: 50%;
-        height: 30%;
-        width: 50%;
-        margin: -15% 0 0 -25%;
+
+
+        /* Inside auto layout */
 
 
 
@@ -935,7 +1024,7 @@ $colorTitle: #F1CDB3;
   margin: 0 auto;
 
   position: relative;
-  top: 60px;
+  top: 68px;
   left: 0;
 
   a {
@@ -945,7 +1034,14 @@ $colorTitle: #F1CDB3;
     font-weight: 400;
     font-size: 17px;
     line-height: 130%;
+    /* identical to box height, or 22px */
+
+    letter-spacing: 0.06em;
+
+    /* color-dark-3xl */
+
     color: #292929;
+
     position: absolute;
     top: 15px;
     left: 45px;
@@ -956,14 +1052,14 @@ $colorTitle: #F1CDB3;
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1279px) {
   .main-friends {
     &__pet:last-child {
       display: none;
     }
 
     &__title {
-      width: 50%;
+      width: 25rem;
     }
 
     &__pet:first-child {
@@ -982,37 +1078,44 @@ $colorTitle: #F1CDB3;
 
 }
 
-@media (max-width:320px) {
+@media (max-width:767px) {
 
   .main-friends {
     height: 791px;
 
-    &__pets {}
+    &__pets {
+      margin-top: 40px;
+    }
 
     &__title {
+      h3 {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        /* or 32px */
+
+
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        /* color-dark-l */
+
+        color: #545454;
+      }
+
       margin: 0 auto;
       padding-top: 42px;
       width: max-content;
-      font-family: 'Georgia';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 25px;
-      line-height: 130%;
-      /* or 32px */
 
-
-      text-align: center;
-      letter-spacing: 0.06em;
-
-      /* color-dark-l */
-
-      color: #545454;
     }
 
     &__control {
       position: absolute;
-      bottom: 230px;
-      left: 43px;
+      bottom: 240px;
+      left: 40px;
 
       ._prev {
         margin-right: 40px;
@@ -1027,6 +1130,8 @@ $colorTitle: #F1CDB3;
 
     &__pet {
       display: none;
+
+
     }
 
     &__rest {
@@ -1055,10 +1160,37 @@ $colorTitle: #F1CDB3;
 
   // .main-help__container
 
-  &__container {
 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+  &__vector:nth-child(-n+5) {
+
+    margin: 0 50px;
+  }
+
+  &__vector:nth-child(n+6):nth-child(-n+9) {
+    margin: 55px 55px;
+  }
+
+  &__vector:nth-child(6) {
+    padding-left: 65px;
+  }
+
+
+  &__container {
+    margin: 0;
+
+    .row {
+      margin: 0 auto;
+      width: 1026px;
+      display: flex;
+      // justify-content: space-around;
+      flex-wrap: wrap;
+
+
+
+
+    }
+
+
 
 
 
@@ -1070,18 +1202,9 @@ $colorTitle: #F1CDB3;
   }
 
 
-  .row2 {
-    display: grid;
-    grid-template-columns: repeat(4, 30%);
-    margin-top: 60px;
-    margin-left: 100px;
 
-    grid-column-start: 1;
-    grid-column-end: 5;
 
-    grid-row-start: 2;
 
-  }
 
   &__header {
     padding-top: 80px;
@@ -1091,15 +1214,22 @@ $colorTitle: #F1CDB3;
 
   &__text {
     margin: 0 auto;
-    max-width: 308px;
+    width: max-content;
     height: 90px;
-
-    text-align: center;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
+    /* or 45px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    /* color-dark-l */
+
     color: #545454;
 
 
@@ -1140,7 +1270,7 @@ $colorTitle: #F1CDB3;
   .main-help__vector {
     width: max-content;
     height: 113px;
-    margin: 0 auto;
+
 
     img {
       margin: 0 auto;
@@ -1149,46 +1279,87 @@ $colorTitle: #F1CDB3;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1279px) {
   .main-help {
+    height: 779px;
+
     &__container {
-      width: 768px;
-      // display: grid;
-      // grid-template-columns: repeat(3, 33%);
-      // grid-template-rows: repeat(3, 1fr);
+      padding-top: 60px;
+      margin: 0 auto;
+      // width: 630px;
+      // height: 449px;
+
     }
 
 
-    &__item1 {
+
+    .row {
+
+      margin: 0 auto;
+      width: 630px;
+      height: 449px;
       display: grid;
-      width: 630px;
-      grid-template-columns: repeat(3, 1fr);
-      margin: 0 auto;
+      grid-template-columns: repeat(3, 33%);
+      grid-template-rows: repeat(3, 33%);
+      align-content: space-between;
+      align-items: baseline;
+      justify-items: center;
     }
-
-    &__item2 {
-
-
-      width: 630px;
-
-      margin: 0 auto;
-
-    }
-
-
   }
+
+
+
+  &__vector:nth-child(-n+5) {
+
+    margin: 0 0;
+  }
+
+  &__vector:nth-child(n+6):nth-child(-n+9) {
+    margin: 0 0;
+  }
+
+  &__vector:nth-child(6) {
+    padding-left: 65px;
+  }
+
+
+
+
+  &__vector:nth-child(6) {
+    padding-left: 0px;
+  }
+
+  &__vector {
+    margin-top: 55px;
+  }
+
+
 }
 
-@media (max-width:320px) {
+
+
+@media (max-width:767px) {
   .main-help {
-    display: flex;
-    flex-direction: column;
+
     height: 745px;
     width: 300px;
 
+    &__vector:nth-child(-n+5) {
+
+      margin: 0 0;
+    }
+
+    &__vector:nth-child(n+6):nth-child(-n+9) {
+      margin: 0 0;
+    }
+
+    &__vector:nth-child(6) {
+      padding-left: 0px;
+    }
+
     &__header {
       padding: 0;
-      margin: 42px 0 0 0;
+      margin: 30px 0 0 0;
     }
 
     &__text {
@@ -1209,12 +1380,46 @@ $colorTitle: #F1CDB3;
       color: #545454;
     }
 
+    &__title {
+      margin-top: 20px;
+      font-family: 'Georgia';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 110%;
+      /* identical to box height, or 17px */
+
+
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+
+      /* color-dark-l */
+
+      color: #545454;
+    }
+
+    &__vector {
+      margin: 0;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
     &__container {
       padding: 0;
       width: 300px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+
+      .row {
+        margin-top: 30px;
+        width: 290px;
+        height: 555px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+      }
     }
 
 
@@ -1268,6 +1473,7 @@ $colorTitle: #F1CDB3;
   &__card {
     max-width: 380px;
     height: 282px;
+    margin-left: 12px;
 
 
   }
@@ -1285,10 +1491,18 @@ $colorTitle: #F1CDB3;
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
+    /* or 45px */
+
+
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    /* color-dark-l */
+
     color: #545454;
     max-width: 380px;
     height: 90px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
 
 
 
@@ -1319,7 +1533,7 @@ $colorTitle: #F1CDB3;
   }
 }
 
-@media (max-width:768px) {
+@media (max-width:1279px) {
   .main-donation {
     height: 783px;
 
@@ -1327,30 +1541,40 @@ $colorTitle: #F1CDB3;
     &__card {}
 
     &__container {
-
+      margin: 0 auto;
 
       flex-direction: column-reverse;
     }
 
     &__images {
-      margin-top: 60px;
-
+      margin: 60px 0 0 0;
     }
   }
 
 }
 
-@media (max-width:320px) {
+@media (max-width:767px) {
   .main-donation {
     width: 320px;
-    height: 542.2px;
+    height: 500px;
 
     .bank-card {
       width: 281px;
 
     }
 
-    &__card {}
+    &__images {
+      margin: 15px 0 0 0;
+
+      img {
+        width: 260px;
+        height: 135px;
+      }
+    }
+
+    &__card {
+      margin: 0;
+    }
 
     &__info {
       width: 280px;
@@ -1386,11 +1610,12 @@ $colorTitle: #F1CDB3;
       /* color-dark-l */
 
       color: #545454;
+      margin: 10px 35px 0 0;
     }
 
     &__container {
       width: 320px;
-      height: 542px;
+      // height: 542px;
       position: static;
       margin-left: 20px;
 
@@ -1531,7 +1756,7 @@ $colorTitle: #F1CDB3;
 
 
 
-@media (max-width: 768px) {
+@media (max-width:1279px) {
 
 
   .footer {
@@ -1544,7 +1769,7 @@ $colorTitle: #F1CDB3;
     }
 
     &-office {
-      margin: 30px 0 0 60px;
+      margin: 30px 0 0 45px;
     }
 
     &-container {
@@ -1561,10 +1786,13 @@ $colorTitle: #F1CDB3;
   }
 }
 
-@media (max-width:320px) {
+@media (max-width:767px) {
 
   .footer {
+
     height: 809px;
+
+
 
     &-text {
       font-family: 'Georgia';
@@ -1582,28 +1810,32 @@ $colorTitle: #F1CDB3;
     }
 
     &-connect {
+      margin: 42px 0 0 0;
       width: 279px;
+
+      &__title {
+
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        /* or 32px */
+
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        /* color-light-xl */
+
+        color: #FFFFFF;
+      }
     }
 
-    &__title {
-      font-family: 'Georgia';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 25px;
-      line-height: 130%;
-      /* or 32px */
 
-      text-align: center;
-      letter-spacing: 0.06em;
-
-      /* color-light-xl */
-
-      color: #FFFFFF;
-    }
 
     &-office {
       margin: 0;
-      margin-top: 40px;
+      margin-top: 15px;
 
       &__title {
         font-family: 'Georgia';

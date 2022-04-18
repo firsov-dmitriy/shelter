@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
     <title>Shelter</title>
   </head>
   <body>
@@ -94,10 +98,13 @@
         <div class="main-friends">
           <p id="friends"></p>
           <div class="main-friends__container">
-            <h1 class="main-friends__title">
-              Our friends who <br />
-              are looking for a house
-            </h1>
+            <div class="main-friends__title">
+              <h3>
+                Our friends who <br />
+                are looking for a house
+              </h3>
+            </div>
+
             <div class="main-friends__control">
               <div class="btn-control _prev">
                 <img src="../../assets/icons/left-arrow.png" alt="prev" />
@@ -162,32 +169,35 @@
           <p id="help"></p>
 
           <div class="main-help__header">
-            <h3 class="main-help__text">How you can help our shelter</h3>
+            <h3 class="main-help__text">
+              How you can help <br />
+              our shelter
+            </h3>
           </div>
 
           <div class="main-help__container">
-            <div class="main-help__vector">
-              <img src="../../assets//icons/food.svg" alt="food" />
-              <p class="main-help__title">Pet food</p>
-            </div>
-            <div class="main-help__vector">
-              <img src="../../assets//icons/car.svg" alt="car" />
-              <p class="main-help__title">Transportation</p>
-            </div>
-            <div class="main-help__vector">
-              <img src="../../assets//icons/toys.svg" alt="toys" />
-              <p class="main-help__title">Toys</p>
-            </div>
-            <div class="main-help__vector">
-              <img src="../../assets//icons/cup.svg" alt="cup" />
-              <p class="main-help__title">Bowls and cups</p>
-            </div>
-            <div class="main-help__vector">
-              <img src="../../assets//icons/shampoos.svg" alt="shampoos" />
+            <div class="row">
+              <div class="main-help__vector">
+                <img src="../../assets//icons/food.svg" alt="food" />
+                <p class="main-help__title">Pet food</p>
+              </div>
+              <div class="main-help__vector">
+                <img src="../../assets//icons/car.svg " alt="car" />
+                <p class="main-help__title">Transportation</p>
+              </div>
+              <div class="main-help__vector">
+                <img src="../../assets//icons/toys.svg" alt="toys" />
+                <p class="main-help__title">Toys</p>
+              </div>
+              <div class="main-help__vector">
+                <img src="../../assets//icons/cup.svg" alt="cup" />
+                <p class="main-help__title">Bowls and cups</p>
+              </div>
+              <div class="main-help__vector">
+                <img src="../../assets//icons/shampoos.svg" alt="shampoos" />
 
-              <p class="main-help__title">Shampoos</p>
-            </div>
-            <div class="row2">
+                <p class="main-help__title">Shampoos</p>
+              </div>
               <div class="main-help__vector">
                 <img src="../../assets//icons/vitamins.svg" alt="vitamins" />
                 <p class="main-help__title">Vitamins</p>
@@ -243,9 +253,9 @@
           <p id="contacts"></p>
           <div class="footer-container">
             <div class="footer-connect">
-              <h1 class="footer-connect__title">
+              <h3 class="footer-connect__title">
                 For questions and suggestions
-              </h1>
+              </h3>
               <div class="footer-connect__email __flex">
                 <img
                   class="footer-images"
@@ -270,9 +280,9 @@
               </div>
             </div>
             <div class="footer-office">
-              <h1 class="footer-office__title">
+              <h3 class="footer-office__title">
                 We are waiting for your visit
-              </h1>
+              </h3>
               <div class="footer-office__boston __flex">
                 <img
                   class="footer-images"
