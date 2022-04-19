@@ -373,13 +373,17 @@ $colorTitle: #F1CDB3;
 
 @media(max-width: 1279px) {
   .wrapper {
-    width: 768px;
+    display: flex;
+
+    margin: 0 auto;
+    max-width: 768px;
     padding-bottom: 639px;
 
   }
 
   .header {
-    margin: 30px 30px;
+    // width: max-content;
+    // margin-right: 0;
 
     &__subtitle {
       margin-top: 10px;
