@@ -69,7 +69,7 @@ article>*+* {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   min-height: 100%;
 
@@ -1762,6 +1762,9 @@ $colorTitle: #F1CDB3;
 
 @media (max-width:1279px) {
 
+  .wrapper {
+    overflow-x: hidden;
+  }
 
   .footer {
 
@@ -1791,6 +1794,9 @@ $colorTitle: #F1CDB3;
 }
 
 @media (max-width:767px) {
+  .wrapper {
+    overflow-x: hidden;
+  }
 
   .footer {
 

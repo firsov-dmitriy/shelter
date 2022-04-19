@@ -68,7 +68,7 @@ article > * + * {
 }
 
 .wrapper {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -399,6 +399,9 @@ select {
 }
 
 @media (max-width: 1279px) {
+  .wrapper {
+    max-width: 768px;
+  }
   .main-friends__title {
     width: 25rem;
   }
@@ -590,7 +593,8 @@ select {
 
 @media (max-width: 1279px) {
   .wrapper {
-    width: 768px;
+    margin: 0 auto;
+    max-width: 768px;
   }
   .header {
     position: static;
@@ -617,7 +621,7 @@ select {
     margin-left: 20px;
   }
   ._container {
-    width: 708px;
+    max-width: 708px;
     margin: 0 auto;
   }
   .main-block {
@@ -675,7 +679,8 @@ select {
     color: #FAFAFA;
   }
   .footer {
-    width: 768px;
+    margin: 0 auto;
+    max-width: 768px;
     height: 639px;
   }
   .footer-connect {
@@ -728,7 +733,7 @@ select {
 
 @media (max-width: 767px) {
   .wrapper {
-    width: 320px;
+    max-width: 320px;
   }
   .header {
     position: static;

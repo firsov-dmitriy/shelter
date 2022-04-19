@@ -69,7 +69,7 @@ article>*+* {
 
     // display: flex;
     // flex-direction: column;
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 
 }
@@ -489,6 +489,10 @@ select {
 }
 
 @media (max-width: 1279px) {
+    .wrapper {
+        max-width: 768px;
+    }
+
     .main-friends {
 
         &__title {
@@ -759,7 +763,8 @@ select {
 
 @media(max-width: 1279px) {
     .wrapper {
-        width: 768px;
+        margin: 0 auto;
+        max-width: 768px;
 
 
     }
@@ -793,7 +798,7 @@ select {
     }
 
     ._container {
-        width: 708px;
+        max-width: 708px;
         margin: 0 auto;
     }
 
@@ -882,8 +887,8 @@ select {
     }
 
     .footer {
-
-        width: 768px;
+        margin: 0 auto;
+        max-width: 768px;
         height: 639px;
 
         &-connect {
@@ -954,7 +959,7 @@ select {
 @media(max-width: 767px) {
 
     .wrapper {
-        width: 320px;
+        max-width: 320px;
     }
 
     .header {
