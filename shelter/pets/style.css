@@ -593,6 +593,7 @@ select {
 
 @media (max-width: 1279px) {
   .wrapper {
+    overflow-x: hidden;
     margin: 0 auto;
     max-width: 768px;
   }
@@ -732,7 +733,11 @@ select {
 }
 
 @media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
   .wrapper {
+    overflow-x: hidden;
     max-width: 320px;
   }
   .header {
