@@ -320,11 +320,15 @@ select {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin: 0 103px;
+        margin: 0 auto;
 
     }
 
     &__pet:hover {
+        transform: scale(1.1);
+        box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.31);
+        transition: box-shadow 0.5s, transform 0.5s;
+
         .pet-link {
             background-color: #F1CDB3;
 
@@ -338,6 +342,7 @@ select {
 
 
     &__pet {
+        -webkit-transition: 0.5s ease;
         margin-top: 30px;
         width: 270px;
         height: 435px;
@@ -384,6 +389,7 @@ select {
         }
 
         .pet-link:hover {
+
             background-color: #F1CDB3;
             cursor: pointer;
         }
@@ -970,7 +976,7 @@ select {
     }
 
     .header {
-        position: static;
+
         width: 320px;
         padding: 0;
         height: 60px;

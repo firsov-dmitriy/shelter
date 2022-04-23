@@ -288,7 +288,18 @@ select {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 103px;
+  margin: 0 auto;
+}
+
+.main-friends__pet:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.31);
+          box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.31);
+  -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
 }
 
 .main-friends__pet:hover .pet-link {
@@ -296,6 +307,7 @@ select {
 }
 
 .main-friends__pet {
+  -webkit-transition: 0.5s ease;
   margin-top: 30px;
   width: 270px;
   height: 435px;
@@ -741,7 +753,6 @@ select {
     max-width: 320px;
   }
   .header {
-    position: static;
     width: 320px;
     padding: 0;
     height: 60px;
