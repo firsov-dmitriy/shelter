@@ -48,13 +48,13 @@ const showPets = () => {
     if (eve.target.classList.contains("next")) {
       document.querySelector(".main-friends__pets").innerHTML = "";
 
-      if (num <= 4) {
+      if (num <= 3) {
         num += 3;
         render(num);
 
         console.log(num);
-      } else if (num >= 5) {
-        num = num % 6;
+      } else if (num >= 4) {
+        num = num % 4;
         render(num);
         console.log(num);
       }
