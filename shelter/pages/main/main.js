@@ -2,7 +2,9 @@ const showNav = () => {
   const button = document.querySelector(".burger-menu");
   const navMenu = document.querySelector;
   button.addEventListener("click", (eve) => {
-    console.log(eve.target.classList);
+    const menu = document.querySelector(".menu")
+    menu.style.display = "flex"
+    menu.classList.add("menu-show")
     eve.target.style.transform = "rotate(90deg)";
   });
 };
@@ -10,7 +12,7 @@ const showNav = () => {
 showNav();
 
 const createPet = (dataPet) => {
-  const petContainer = `<div class="pet-container">
+  const petContainer = `<div class="pet-container data-name=${dataPet.name}">
     <div class="pet-image">
       <img
         src=${dataPet.img}
@@ -34,10 +36,11 @@ const render = (num) => {
 
   data
     .slice(number - 3, number)
-    .map((pet) =>
+    .map((pet,id) =>
       document.querySelector(".main-friends__pets").appendChild(createPet(pet))
     );
 };
+
 
 const showPets = () => {
   let num = 3;
@@ -71,5 +74,17 @@ const showPets = () => {
     }
   });
 };
+const getIdCard = ()=> {
+  const petsCard = document.querySelector(".main-friends__pets")
+  
+  petsCard.addEventListener("click", (eve)=> {
+    const tag = eve.target.tagName;
+    let id = null
+    if (tag === "A") {
+      console.log(eve.target.parentElement.dataset.name)
+    }
+  })
+}
+getIdCard()
 
 showPets();
