@@ -1465,10 +1465,12 @@ select {
 
 @media (max-width: 767px) {
   .menu {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: absolute;
     top: 0;
-    left: -350px;
+    right: -350px;
     z-index: 100;
     background-color: #292929;
     -webkit-box-align: center;
@@ -1478,9 +1480,9 @@ select {
         -ms-flex-pack: end;
             justify-content: flex-end;
     max-width: 320px;
-    height: 800px;
-    -webkit-transition: left ease 0.5s;
-    transition: left ease 0.5s;
+    height: 830px;
+    -webkit-transition: right ease 0.5s;
+    transition: right ease 0.5s;
   }
   .menu__item {
     font-family: "Arial";
@@ -1515,17 +1517,24 @@ select {
   }
 }
 
-.burger-menu {
-  z-index: 1000;
-}
-
 .menu-show {
   /* тут твои стили */
   position: absolute;
   top: 0;
-  left: 0px;
+  right: 0px;
   z-index: 100;
-  border: 3px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.burger-menu {
+  position: relative;
   z-index: 1000;
+}
+
+.burger-rotate {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 /*# sourceMappingURL=style.css.map */

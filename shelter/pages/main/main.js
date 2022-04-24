@@ -1,11 +1,12 @@
 const showNav = () => {
   const button = document.querySelector(".burger-menu");
-  const navMenu = document.querySelector;
+
+  const menu = document.querySelector(".menu");
   button.addEventListener("click", (eve) => {
-    const menu = document.querySelector(".menu");
-    menu.style.display = "flex";
-    menu.classList.add("menu-show");
-    eve.target.style.transform = "rotate(90deg)";
+    menu.classList.toggle("menu-show");
+    console.log("work");
+
+    eve.target.classList.toggle("burger-rotate");
   });
 };
 

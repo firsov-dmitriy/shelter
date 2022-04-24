@@ -61,7 +61,7 @@ img {
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 
@@ -346,8 +346,7 @@ $colorTitle: #f1cdb3;
       margin: 30px 0 0 30px;
     }
 
-    &__logo {
-    }
+    &__logo {}
   }
 
   ._container {
@@ -360,8 +359,7 @@ $colorTitle: #f1cdb3;
     flex: 1 1 auto;
   }
 
-  .main-block__text {
-  }
+  .main-block__text {}
 
   .main-block {
     &__btn-background {
@@ -1202,11 +1200,9 @@ $colorTitle: #f1cdb3;
       }
     }
 
-    &__item1 {
-    }
+    &__item1 {}
 
-    &__item2 {
-    }
+    &__item2 {}
   }
 }
 
@@ -1270,8 +1266,7 @@ $colorTitle: #f1cdb3;
     margin: 0 0 20px 0;
   }
 
-  .bank-card {
-  }
+  .bank-card {}
 }
 
 .main-donation {
@@ -1298,8 +1293,7 @@ $colorTitle: #f1cdb3;
   .main-donation {
     height: 783px;
 
-    &__card {
-    }
+    &__card {}
 
     &__container {
       margin: 0 auto;
@@ -1387,7 +1381,8 @@ $colorTitle: #f1cdb3;
   background-image: url(/assets/images/footer-back.png);
   background: url(noise_lines_transparent@2X.png),
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ,
     #211f20;
   margin: 0 auto;
 
@@ -1430,12 +1425,10 @@ $colorTitle: #f1cdb3;
 
   // .footer-connect__phone
 
-  &__phone {
-  }
+  &__phone {}
 }
 
-.footer-images {
-}
+.footer-images {}
 
 .footer-text {
   text-decoration: none;
@@ -1486,8 +1479,7 @@ $colorTitle: #f1cdb3;
 
   // .footer-office__london
 
-  &__london {
-  }
+  &__london {}
 }
 
 .__flex {
@@ -1629,10 +1621,10 @@ $colorTitle: #f1cdb3;
 
 @media (max-width: 767px) {
   .menu {
-    display: none;
+    display: flex;
     position: absolute;
     top: 0;
-    left: -350px;
+    right: -350px;
 
     z-index: 100;
     // display: flex;
@@ -1641,8 +1633,9 @@ $colorTitle: #f1cdb3;
     justify-content: flex-end;
 
     max-width: 320px;
-    height: 800px;
-    transition: left ease 0.5s;
+    height: 830px;
+
+    transition: right ease 0.5s;
 
     &__item {
       font-family: "Arial";
@@ -1672,31 +1665,39 @@ $colorTitle: #f1cdb3;
     }
   }
 }
-.burger-menu {
-  z-index: 1000;
-}
+
+
+
 .menu-show {
   /* тут твои стили */
 
   position: absolute;
   top: 0;
-  left: 0px;
+  right: 0px;
   z-index: 100;
-  border: 3px solid red;
+  display: flex;
 
-  z-index: 1000;
+
+
 }
 
 .acvive-burger {
   .menu__list {
-    &__item {
-    }
+    &__item {}
 
     // .menu__link
 
-    &__link {
-    }
+    &__link {}
   }
 
   // .menu__item
+}
+
+.burger-menu {
+  position: relative;
+  z-index: 1000;
+}
+
+.burger-rotate {
+  transform: rotate(90deg);
 }
