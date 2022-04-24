@@ -2,9 +2,9 @@ const showNav = () => {
   const button = document.querySelector(".burger-menu");
   const navMenu = document.querySelector;
   button.addEventListener("click", (eve) => {
-    const menu = document.querySelector(".menu")
-    menu.style.display = "flex"
-    menu.classList.add("menu-show")
+    const menu = document.querySelector(".menu");
+    menu.style.display = "flex";
+    menu.classList.add("menu-show");
     eve.target.style.transform = "rotate(90deg)";
   });
 };
@@ -32,59 +32,67 @@ const createPet = (dataPet) => {
   return pet;
 };
 const render = (num) => {
-  const number = Math.floor(Math.random() * num);
-
   data
-    .slice(number - 3, number)
-    .map((pet,id) =>
+    .slice(num, num + 3)
+    .map((pet, id) =>
       document.querySelector(".main-friends__pets").appendChild(createPet(pet))
     );
 };
 
-
 const showPets = () => {
-  let num = 3;
-  render(9);
+  let num = 0;
+  render(num);
   const btns = document.querySelector(".main-friends__control");
 
   btns.addEventListener("click", (eve) => {
     if (eve.target.classList.contains("next")) {
       document.querySelector(".main-friends__pets").innerHTML = "";
 
-      render(9);
+      if (num <= 4) {
+        num += 3;
+        render(num);
+
+        console.log(num);
+      } else if (num >= 5) {
+        num = num % 6;
+        render(num);
+        console.log(num);
+      }
     } else if (eve.target.classList.contains("prev")) {
       document.querySelector(".main-friends__pets").innerHTML = "";
-      console.log(num);
-      if (3 < num || num >= 6) {
-        render(num);
+      if (num >= 3) {
         num -= 3;
-        console.log("first");
-      } else if (num < 3 && num !== 0) {
-        num *= 4;
         render(num);
-        console.log("second");
-      } else if (num === 3) {
-        render(num);
-        num = 0;
-        console.log("three");
-      } else {
-        render(3);
-        num = 3;
+        console.log(num);
+      } else if (num <= 2) {
+        if (num === 0) {
+          num = 4;
+          render(num);
+          console.log(num);
+        } else if (num === 1) {
+          num = 5;
+          render(num);
+          console.log(num);
+        } else if (num === 2) {
+          num = 6;
+          render(num);
+          console.log(num);
+        }
       }
     }
   });
 };
-const getIdCard = ()=> {
-  const petsCard = document.querySelector(".main-friends__pets")
-  
-  petsCard.addEventListener("click", (eve)=> {
+const getIdCard = () => {
+  const petsCard = document.querySelector(".main-friends__pets");
+
+  petsCard.addEventListener("click", (eve) => {
     const tag = eve.target.tagName;
-    let id = null
+    let id = null;
     if (tag === "A") {
-      console.log(eve.target.parentElement.dataset.name)
+      console.log(eve.target.parentElement.dataset.name);
     }
-  })
-}
-getIdCard()
+  });
+};
+getIdCard();
 
 showPets();
