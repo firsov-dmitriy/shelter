@@ -13,7 +13,7 @@ const showNav = () => {
 showNav();
 
 const createPet = (dataPet) => {
-  const petContainer = `<div class="pet-container data-name=${dataPet.name}">
+  const petContainer = `<div class="pet-container id="${dataPet.name}">
     <div class="pet-image">
       <img
         src=${dataPet.img}
@@ -21,8 +21,8 @@ const createPet = (dataPet) => {
       />
     </div>
     <h1 class="pet-title">${dataPet.name}</h1>
-    <div class="pet-link">
-      <a href="#">Learn more</a>
+    <div class="pet-link link-modal">
+      <a class="link-modal" href="">Learn more</a>
     </div>
   </div>`;
   const pet = document.createElement("div");
@@ -31,6 +31,17 @@ const createPet = (dataPet) => {
   pet.innerHTML = petContainer;
 
   return pet;
+};
+const closeModal = () => {
+  const modal = document.querySelector(".modal");
+
+  if (modal) {
+    const btnClose = document.querySelector(".modal__btn-close");
+    btnClose.addEventListener("click", (eve) => {
+      modal.parentElement.style.display = "none";
+      document.body.style.overflow = "";
+    });
+  }
 };
 const render = (num) => {
   data
@@ -83,17 +94,67 @@ const showPets = () => {
     }
   });
 };
-const getIdCard = () => {
-  const petsCard = document.querySelector(".main-friends__pets");
+const createModal = (pet) => {
+  const modal = `<div class="modal">
+  <div class="modal__btn-close">
+    <img src="../../assets/icons/close.svg" alt="close" />
+  </div>
+  <div class="modal__container">
+    <div class="modal__image">
+      <img src=${pet.img} alt=${pet.name} />
+    </div>
 
-  petsCard.addEventListener("click", (eve) => {
-    const tag = eve.target.tagName;
-    let id = null;
-    if (tag === "A") {
-      console.log(eve.target.parentElement.dataset.name);
+    <div class="modal__text">
+      <div class="modal__text-container">
+        <h3 class="modal__title">${pet.name}</h3>
+        <p class="modal__subtitle">${pet.breed}</p>
+        <p class="modal__info">
+         ${pet.description}
+        </p>
+        <ul class="modal__list">
+          <li class="modal__list-item">Age: ${pet.age}</li>
+          <li class="modal__list-item">Inoculations: ${pet.inoculations}</li>
+          <li class="modal__list-item">Diseases: ${pet.diseases}</li>
+          <li class="modal__list-item">Parasites:  ${pet.parasites}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>`;
+  return modal;
+};
+const showModal = (pet) => {
+  const container = document.querySelector(".fixed-overlay");
+
+  container.innerHTML = createModal(pet);
+  container.style.display = "block";
+  const body = document.body;
+  body.style.overflow = "hidden";
+  closeModal();
+};
+const getIdCard = () => {
+  const petsCard = document.getElementsByClassName("main-friends__pets");
+  petsCard[0].addEventListener("click", (eve) => {
+    eve.preventDefault();
+    let idElement = "";
+    const target = eve.target;
+    if (target.classList.contains("link-modal")) {
+      if (target.tagName === "DIV") {
+        idElement = eve.target.parentElement.children[1].innerText;
+      } else {
+        idElement =
+          eve.target.parentElement.parentElement.children[1].innerText;
+      }
     }
+    data.map((pet) => {
+      if (pet.name === idElement) {
+        showModal(pet);
+        closeModal();
+      }
+    });
   });
 };
+
 getIdCard();
 
 showPets();

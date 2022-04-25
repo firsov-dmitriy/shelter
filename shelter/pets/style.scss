@@ -117,12 +117,15 @@ select {
 
 
     // .header__container
-    .__container {
+    &__container {
 
 
         display: flex;
-        height: 60px;
+
         align-items: center;
+        justify-content: space-between;
+        height: 60px;
+
     }
 
 
@@ -175,13 +178,7 @@ select {
 
 .menu {
 
-    position: absolute;
-    top: 46px;
-    right: 0;
 
-
-    margin: 0px 40px 0px 542px;
-    // .menu__list
 
 
     &__list {
@@ -499,6 +496,10 @@ select {
         max-width: 768px;
     }
 
+    .header {
+        margin: 0;
+    }
+
     .main-friends {
 
         &__title {
@@ -514,6 +515,8 @@ select {
 
 
     }
+
+
 
 
 
@@ -777,30 +780,26 @@ select {
     }
 
     .header {
-        position: static;
+        // position: static;
 
         width: 708px;
-        margin: 30px 0;
-        padding: 30px 0;
+
+        // padding: 30px 0;
+
+        &__container {}
 
         &__title {
-            margin: 0 0 10px 30px;
+            margin: 0 0 10px 0;
         }
 
-        &__subtitle {
-            margin: 0 0 0 30px;
-        }
+        &__subtitle {}
 
         .menu {
             &__item {
                 margin-left: 20px;
             }
 
-            position: relative;
-            top: 0;
-            left: 0;
-            align-items: center;
-            margin: 15px 0 0 10px;
+
         }
     }
 
@@ -862,8 +861,9 @@ select {
     .header {
 
 
+
         &__container {
-            margin: 0;
+
 
             display: flex;
             justify-content: space-between;
@@ -963,7 +963,8 @@ select {
     }
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
+
     body {
         overflow-x: hidden;
 
@@ -973,22 +974,28 @@ select {
 
         overflow-x: hidden;
         max-width: 320px;
+
     }
 
+
+
     .header {
+
 
         width: 320px;
         padding: 0;
         height: 60px;
 
-        margin-top: 30px;
+        margin: 30px 0 30px 0;
 
-        .menu {
-            display: none;
+        // .menu {
+        //     display: none;
+        // }
+
+
+        &__title {
+            margin: 0 0 10px 0;
         }
-
-
-
 
 
 
@@ -998,15 +1005,18 @@ select {
             font-weight: 400;
             font-size: 32px;
             line-height: 110%;
+            z-index: 1000;
+
         }
 
         &__container {
+
             width: 300px;
             display: flex;
             justify-content: space-around;
 
             .burger-menu {
-                margin-top: 20px;
+
                 display: block;
                 color: #1A1A1C;
             }
@@ -1115,5 +1125,96 @@ select {
             padding: 0;
             margin: 0;
         }
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        display: flex;
+        position: absolute;
+        top: -30px;
+        right: -350px;
+
+        z-index: 100;
+        // display: flex;
+        background-color: white;
+        align-items: center;
+        justify-content: flex-end;
+
+        max-width: 320px;
+        height: 830px;
+        width: 320px;
+
+        transition: right ease 0.5s;
+
+
+
+        &__item {
+            font-family: "Arial";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 160%;
+            /* or 51px */
+
+            /* color-light-s */
+
+            color: #fafafa;
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 10px 0px;
+            text-align: center;
+        }
+
+        &__list {
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+
+.menu-show {
+    /* тут твои стили */
+
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    z-index: 100;
+    display: flex;
+
+
+
+}
+
+.acvive-burger {
+    .menu__list {
+        &__item {}
+
+        // .menu__link
+
+        &__link {}
+    }
+
+    // .menu__item
+}
+
+.burger-menu {
+    margin: 0;
+    position: relative;
+    z-index: 1000;
+}
+
+.burger-rotate {
+    transform: rotate(90deg);
+
+    img {
+        color: white;
     }
 }

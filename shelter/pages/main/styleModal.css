@@ -18,6 +18,7 @@
           transform: translate(-50%, -50%);
   background: #FAFAFA;
   border-radius: 9px;
+  padding: 10px;
 }
 
 .modal__container {
@@ -43,6 +44,7 @@
 .modal__text {
   width: 351px;
   height: 362px;
+  padding: 0 20px;
   margin: 2em 0.5em 0 0;
 }
 
