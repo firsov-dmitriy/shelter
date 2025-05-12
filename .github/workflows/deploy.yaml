@@ -12,6 +12,10 @@ permissions:
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
 
     steps:
@@ -23,8 +27,3 @@ jobs:
 
       - name: Upload site files
         uses: actions/upload-pages-artifact@v3
-        with:
-          path: .  # или ./dist, если билд
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
